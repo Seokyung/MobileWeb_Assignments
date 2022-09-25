@@ -1,0 +1,29 @@
+.wrapper {
+    margin: 0; /* 바같쪽 여백 없앰 */
+}
+
+.movieHeader {
+    position: fixed; /* 헤더를 페이지 상단에 고정 */
+    display: flex; /* 아이템들을 flex 형태로 배치 */
+    align-items: center; /* 글씨 세로 중앙 정렬 */
+    /* 헤더가 여백없이 페이지 맨 위쪽에 오게 하기 위해 위, 왼쪽, 오른쪽 여백을 없애줌 */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0 0 2rem; /* 안쪽 여백 설정 */
+    height: 10vh; /* 현재 실행중인 스크린 높이에 맞춰 상대적 높이를 반환 (전체높이의 10%) */
+    background-color: blueviolet; /* 배경색 설정 */
+}
+
+.headerTitle {
+    margin: 0.5rem; /* 바깥쪽 여백 설정 */
+    font-size: 2rem; /* 글씨 크기 설정 */
+    color: white; /* 글씨 색상 설정 */
+}
+
+.movieBody {
+    margin-top: 10vh; /* 바깥쪽 여백 설정 */
+    display: grid; /* 아이템들을 grid 형태로 배치 */
+    gap: 0; /* 그리드 아이템들 사이의 여백 없앰 */
+    grid-template-rows: 1fr; /* 그리드 아이템을 동일 크기 행으로 배치 */
+}

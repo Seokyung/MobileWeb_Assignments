@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="survey.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>실습일지1_10</title>
+</head>
+<body>
+    <header>
+        <h1>설문지</h1>
+        <p class="answers">소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+    </header>
+    <hr/>
+    <section>
+        <article>
+            <a class="questions">학년</a>
+            <span class="answers">
+                <input type="radio" name="grade" checked>1학년
+                <input type="radio" name="grade">2학년
+                <input type="radio" name="grade">3학년
+                <input type="radio" name="grade">4학년
+            </span>
+        </article>
+        <br/>
+        <article>
+            <a class="questions">성별</a>
+            <span class="answers">
+                <input type="radio" name="gender">남
+                <input type="radio" name="gender" checked>여
+            </span>
+        </article>
+        <br/>
+        <article>
+            <a class="questions">관심분야</a>
+            <select>
+                <option>모바일 소프트웨어</option>
+                <option>웹 개발</option>
+                <option>Iot</option>
+                <option>게임</option>
+            </select>
+        </article>
+        <br/>
+        <article>
+            <a class="questions">진로(다중 선택)</a>
+            <span class="answers">
+                <input type="checkbox" name="career" checked>개발
+                <input type="checkbox" name="career">기획
+                <input type="checkbox" name="career">영업
+                <input type="checkbox" name="career">창업
+            </span>
+        </article>
+        <br/>
+        <article>
+            <a class="questions">남기고 싶은 말</a>
+            <textarea id="txtbox" placeholder="글을 남겨주세요"></textarea>
+        </article>
+    </section>
+    <footer>
+        <address>Copyright</address>
+    </footer>
+</body>
+</html>

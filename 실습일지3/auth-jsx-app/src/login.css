@@ -1,0 +1,7 @@
+.Login {
+  margin: 10px; /* Login 컴포넌트 전체(상하좌우)에 들어갈 margin 값 설정 */
+}
+
+.login-form {
+  font-weight: bold; /* 로그인 폼의 입력란 앞의 제목 글씨 굵게 설정 */
+}
