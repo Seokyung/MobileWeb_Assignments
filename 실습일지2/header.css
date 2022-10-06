@@ -1,0 +1,25 @@
+img#logo {
+    vertical-align: middle;
+    margin: 10px;
+    width: 30%;
+    height: 30%;
+}
+
+h2#name {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    font-size: 35px;
+    color: blue;
+}
+
+nav#sidemenu {
+    font-size: 13px;
+}
+
+nav#mainmenu {
+    color: white;
+    background-color: forestgreen;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}

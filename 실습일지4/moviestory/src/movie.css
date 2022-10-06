@@ -1,0 +1,38 @@
+.movieContainer {
+    margin: 0; /* 바깥쪽 여백 없앰 */
+    display: flex; /* 아이템들을 flex 형태로 배치 */
+    width: 100vw; /* 현재 실행중인 스크린 너비에 맞춰 상대적 너비를 반환 (전체너비) */
+    height: 90vh; /* 현재 실행중인 스크린 높이에 맞춰 상대적 높이를 반환 (전체높이의 90%) */
+}
+
+.movieImg {
+    width: 30%; /* 넓이를 부모 넓이의 30%로 설정 */
+    object-fit: cover; /* 가로세로 비율을 유지한 채 사이즈가 조절, 비율이 맞지 않으면 이미지를 확대해 컨테이너 완전히 채움 */
+}
+
+.infoContainer {
+    padding: 1.7rem 3.8rem 1.7rem 3.8rem; /* 안쪽 여백 설정 */
+    width: 70%; /* 넓이를 부모 넓이의 70%로 설정 */
+}
+
+.titleTxt {
+    margin: 0; /* 바깥쪽 여백 없앰 */
+    font-size: 3rem; /* 글씨 크기 설정 */
+    color: lemonchiffon; /* 글씨 색상 설정 */
+}
+
+.yearTxt {
+    margin-left: 1.5rem; /* 바깥쪽 여백 설정 */
+    font-size: 1.9rem; /* 글씨 크기 설정 */
+    color: black; /* 글씨 색상 설정 */
+}
+
+.genreTxt {
+    margin: 0.8rem 0 0.8rem 0; /* 바깥쪽 여백 설정 */
+    font-size: 1.9rem; /* 글씨 크기 설정 */
+}
+
+.synopTxt {
+    margin: 1.3rem 0 1.3rem 0; /* 바깥쪽 여백 설정 */
+    font-size: 1.4rem; /* 글씨 크기 설정 */
+}
