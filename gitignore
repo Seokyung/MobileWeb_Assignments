@@ -1,5 +1,9 @@
 *.tmp
 
+# Word file
+*.docs
+*.docx
+
 # Word temporary
 ~$*.doc*
 
@@ -12,8 +16,15 @@ Backup of *.doc*
 # Excel Backup File
 *.xlk
 
+# PowerPoint file
+*.ppt
+*.pptx
+
 # PowerPoint temporary
 ~$*.ppt*
 
 # Visio autosave temporary files
 *.~vsd*
+
+#PDF file
+*.pdf
