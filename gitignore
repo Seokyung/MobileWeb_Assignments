@@ -1,0 +1,30 @@
+*.tmp
+
+# Word file
+*.docs
+*.docx
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint file
+*.ppt
+*.pptx
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
+#PDF file
+*.pdf
