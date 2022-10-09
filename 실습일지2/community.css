@@ -1,0 +1,39 @@
+section#community {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(8, 62, 8);
+    border-radius: 10px;
+    background-color: rgb(14, 107, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img#img_community {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#community hr {
+    width: 100%;
+}
+
+ul#community_menu {
+    width: 90%;
+    height: 200px;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    vertical-align: top;
+    list-style-type: none;
+    background-color: white;
+}
+
+ul#community_menu li {
+    margin: 10px;
+    font-size: 14px;
+}

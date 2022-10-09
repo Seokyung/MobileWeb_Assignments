@@ -1,0 +1,5 @@
+.wrapper {
+    margin: 0; /* 바깥쪽 여백 없앰 */
+    display: grid; /* 아이템들을 grid 형태로 배치 */
+    grid-template-rows: 1fr; /* 그리드 아이템을 동일 크기 행으로 배치 */
+}

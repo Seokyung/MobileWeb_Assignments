@@ -1,0 +1,9 @@
+body {
+  margin: 0; /* body의 상하좌우측을 모두 브라우저에 붙임 (margin 없애기) */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* 폰트 설정 */
+  /* 텍스트 브라우저에 부드럽게 렌더링 (webkit 기반의 브라우저에만 적용) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

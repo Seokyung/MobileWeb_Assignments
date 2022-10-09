@@ -1,0 +1,71 @@
+.wrapper {
+    margin: 2rem; /* 카드 여백 크기 */
+    display: grid; /* 각 그리드 아이템들을 그리드 형태로 배치 */
+    gap: 2rem; /* 그리드 아이템들 사이의 여백 설정 */
+    grid-template-rows: 1fr; /* 그리드 아이템을 동일 크기 행으로 배치 */
+    justify-content: center; /* 그리드 아이템들 가로 중앙 정렬 */
+}
+
+.card {
+    box-shadow: 0 0 10px 5px gray; /* 3차원 박스 효과 */
+    border-radius: 2px; /* 카드 모서리 약간 둥글게 설정 */
+    min-width: 18rem; /* 카드 최소 크기 */
+    display: flex; /* 아이템들 flex 형태로 배치 */
+}
+
+.carding {
+    width: 12rem; /* 상품이미지의 가로폭, 세로폭 설정 */
+    height: 15rem;
+    object-fit: cover; /* 이미지를 가로세로에 맞게 채움 */
+    padding: 20px; /* 이미지 박스 안의 여백 설정 */
+}
+
+.cardbody {
+    margin: 1rem; /* 상품 상세정보 박스 밖의 여백 설정 */
+}
+
+.cardtime {
+    font-size: 1.4rem; /* 폰트 크기 설정 */
+    color: yellow; /* 폰트 색상 설정 */
+    margin-top: 0.6rem; /* 바깥 위쪽 여백 설정 (border와 바깥과의 여백) */
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue; /* 글씨 테두리에 그림자 효과 설정 */
+}
+
+.cardtitle {
+    line-height: 1.4rem; /* 텍스트 줄간격 설정 */
+    margin-bottom: 1rem; /* 바깥 아래쪽 여백 설정 */
+}
+
+.carddescription {
+    line-height: 1.2rem; /* 텍스트 줄간격 설정 */
+}
+
+.cardprice {
+    font-size: 1.4rem; /* 폰트 크기 설정 */
+    margin-top: 1.5rem; /* 바깥 위쪽 여백 설정 */
+}
+
+.cardprice del {
+    font-size: 1.2rem; /* 폰트 크기 설정 */
+    margin-right: 0.5rem; /* 바깥 오른쪽 여백 설정 */
+}
+
+.btnwrapper {
+    margin: auto 0.8rem 0.8rem auto; /* 버튼이 맨 오른쪽 아래에 위치할 수 있도록 margin 설정 (상, 우, 하, 좌) */
+}
+
+.purchasetxt {
+    font-size: 1.3rem; /* 폰트 크기 설정 */
+    font-weight: bold; /* 글씨 굵게 설정 */
+    color: rgb(180, 0, 0); /* 폰트 색상 설정 */
+    padding-right: 0.7rem; /* 내부 오른쪽 여백 설정 (본문과 border 사이의 여백) */
+}
+
+.cardbutton {
+    font-size: 1.2rem; /* 폰트 크기 설정 */
+    font-weight: bold; /* 글씨 굵게 설정 */
+    color: white; /* 폰트 색상 설정 */
+    border-radius: 10px; /* 버튼 모서리 둥글게 설정 */
+    background-color: rgb(180, 0, 0); /* 버튼 색상 설정 */
+    padding: 1rem; /* 버튼 안쪽 여백 설정 */
+}
