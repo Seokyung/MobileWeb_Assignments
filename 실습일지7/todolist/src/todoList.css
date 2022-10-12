@@ -1,0 +1,96 @@
+.todo-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    width: 460px;
+    height: 680px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+#title {
+    margin: 1rem 0;
+    color: #082f58;
+}
+
+.todo-add-elements {
+    margin: 0.9rem 0;
+}
+
+#add {
+    padding: 6px 4px;
+    margin-right: 1rem;
+    width: 65%;
+}
+
+#updateTxt {
+    padding: 6px 4px;
+    width: 65%;
+}
+
+#addbtn {
+    padding: 7px 14px;
+    background-color: #1565c0;
+    border: none;
+    border-radius: 7px;
+    color: #fafafa;
+}
+#addbtn:hover {
+    background-color: #0e417c;
+}
+
+#list {
+    padding: 1rem;
+}
+
+.todo-element-list {
+    height: 550px;
+    overflow-y: scroll;
+}
+
+#item {
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    position: relative;
+    box-shadow: 0 5px 8px rgba(0,0,0,.16);
+    border-radius: 7px;
+    transition: .4s;
+}
+#item:hover {
+    background-color: #ebebeb;
+}
+
+#edit {
+    margin: 0 0.2rem 0 0.5rem;
+    width: 1rem;
+    filter: invert(44%) sepia(7%) saturate(2433%) hue-rotate(202deg) brightness(86%) contrast(84%);
+}
+#edit:hover {
+    filter: invert(26%) sepia(5%) saturate(2766%) hue-rotate(202deg) brightness(96%) contrast(88%);
+}
+
+#trash {
+    margin: 0 0.1rem;
+    width: 1rem;
+    filter: invert(17%) sepia(24%) saturate(5934%) hue-rotate(344deg) brightness(114%) contrast(115%);
+}
+#trash:hover {
+    filter: invert(16%) sepia(96%) saturate(1537%) hue-rotate(342deg) brightness(82%) contrast(110%);
+}
+
+#update {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0.2rem 0 0.5rem;
+    width: 1.2rem;
+    filter: invert(44%) sepia(7%) saturate(2433%) hue-rotate(202deg) brightness(86%) contrast(84%);
+}
+#update:hover {
+    filter: invert(26%) sepia(5%) saturate(2766%) hue-rotate(202deg) brightness(96%) contrast(88%);
+}
