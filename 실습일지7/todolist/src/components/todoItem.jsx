@@ -17,7 +17,7 @@ function TodoItem(props) {
     const deleteTodoList = (id) => {
         const newItemList = props.itemList.filter((itemList) => itemList.id !== id);
         props.setItemList(newItemList);
-        console.log(props.itemList, "삭제됨");
+        console.log(`[아이템 삭제] id: ${id} value: ${props.item.value}`);
     };
 
     const clickEditBtn = () => {
@@ -31,10 +31,9 @@ function TodoItem(props) {
                 value: edit.id === id ? editItem : edit.value,
             }
         ));
-
         props.setItemList(newItemList);
-        
         setIsEdit(false);
+        console.log(`[아이템 수정] id: ${id} value: ${editItem}`);
     };
 
     return(

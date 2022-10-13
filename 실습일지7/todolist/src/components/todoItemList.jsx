@@ -5,7 +5,7 @@ import "./../todoList.css"
 
 function TodoItemList(props) {
     useEffect(() => {
-        console.log(props.itemList);
+        //console.log(props.itemList);
     },[props.itemList]);
     return(
         <div className="todo-element-list">

@@ -15,7 +15,7 @@ function InputTodo(props) {
     const addTodoList = () => {
         if(inputItem.length > 0) {
             props.setItemList((prevItem) => {
-                console.log(itemId.current, inputItem);
+                console.log(`[아이템 추가] id: ${itemId.current} value: ${inputItem}`);
                 return[
                     {
                         id: itemId.current,
