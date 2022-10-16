@@ -28,10 +28,9 @@ function InputTodo(props) { //state변수 itemList, setItemList를 todoList에�
             });
     
             setInputItem(''); //입력폼 내용 초기화
-            inputFocus.current.focus(); //입력폼으로 포커싱
-    
             itemId.current++; //id값 증가
         }
+        inputFocus.current.focus(); //입력폼으로 포커싱
     };
 
     return(

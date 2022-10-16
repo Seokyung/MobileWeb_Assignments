@@ -21,6 +21,7 @@ function TodoItem(props) { //key와 item, 그리고 state변수 itemList, setIte
         //즉, 삭제할 아이템만 빼고 새 리스트를 만듦
         const newItemList = props.itemList.filter((itemList) => itemList.id !== id); //아이템을 삭제한 새 리스트를 newItemList배열에 저장
         props.setItemList(newItemList); //props로 받아온 아이템 리스트를 삭제한 리스트로 업데이트해줌
+        //props.setItemList(props.itemList.filter((itemList) => itemList.id !== id));
         console.log(`[아이템 삭제] id: ${id} value: ${props.item.value}`); //삭제한 아이템 콘솔창에 출력
     };
 
@@ -36,7 +37,7 @@ function TodoItem(props) { //key와 item, 그리고 state변수 itemList, setIte
         //즉, 수정할 아이템의 id를 가진 value만 수정된 내용으로 바꿔주고 나머지는 원래 내용 그대로 저장함
         const newItemList = props.itemList.map((edit) => (
             {
-                ...edit,
+                id: edit.id,
                 value: edit.id === id ? editItem : edit.value, //삼항연산자를 이용해 id가 같으면 editItem(수정된 내용)을, 같지 않으면 edit.value(원래 내용)을 value에 저장 
             }
         ));
