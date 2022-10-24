@@ -8,14 +8,8 @@ function LoginPage() {
     const [isLogin, setIsLogin] = useState(false);
     const [loginFlag, setLoginFlag] = useState(true);
 
-    const onLoginClick = () => {
-        setIsLogin(true);
-    }
     const gotoLoginOrSignup = () => {
         setLoginFlag(!loginFlag);
-    }
-    const onSignUpClick = () => {
-
     }
     
     return(
@@ -30,19 +24,11 @@ function LoginPage() {
                     <h4>Please login to use our wonderful sevices :D</h4>
                     {loginFlag ?
                         <>
-                            <Login/>
-                            <div>
-                                <button onClick={onLoginClick}>Login!</button>
-                                <button onClick={gotoLoginOrSignup}>Goto SignUp</button>
-                            </div>
+                            <Login setIsLogin={setIsLogin} gotoLoginOrSignup={gotoLoginOrSignup}/>
                         </>
                         :
                         <>
-                            <SignUp/>
-                            <div>
-                                <button onClick={onSignUpClick}>SignUp!</button>
-                                <button onClick={gotoLoginOrSignup}>Goto Login</button>
-                            </div>
+                            <SignUp gotoLoginOrSignup={gotoLoginOrSignup}/>
                         </>
                     }
                 </>

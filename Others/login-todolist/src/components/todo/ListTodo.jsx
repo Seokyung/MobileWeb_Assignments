@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./Todo.css";
+import ItemTodo from "./ItemTodo";
 
 function ListTodo(props) {
     return(
@@ -7,7 +8,7 @@ function ListTodo(props) {
             <ul>
                 {props.todoList.map((item) => {
                     return(
-                        <li key={item.id}>{item.value}</li>
+                        <ItemTodo key={item.id} item={item} todoList={props.todoList} setTodoList={props.setTodoList}/>
                     )
                 })}
             </ul>
