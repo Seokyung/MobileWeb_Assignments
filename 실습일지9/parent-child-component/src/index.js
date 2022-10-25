@@ -6,6 +6,6 @@ import Specialization from './ex2/specialization'; //실습2
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <PassingCount/> //실습1
-  //<Specialization/> //실습2
+  //<PassingCount/> //실습1
+  <Specialization/> //실습2
 );

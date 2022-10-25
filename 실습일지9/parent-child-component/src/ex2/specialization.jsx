@@ -27,7 +27,7 @@ function GreetDialog() {
         <Dialog
             style="dialog-greet"
             title="🙌 환영합니다 :)"
-            content="인사 다이얼로그입니다."
+            content="인사말 다이얼로그입니다."
         />
     );
 }
@@ -47,7 +47,7 @@ function NoticeDialog() {
         <Dialog
             style="dialog-notice"
             title="📌 공지사항"
-            content="공지 다이얼로그입니다."
+            content="공지사항 다이얼로그입니다."
         />
     );
 }
