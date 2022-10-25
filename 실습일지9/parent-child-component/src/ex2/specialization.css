@@ -1,0 +1,60 @@
+.spec-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: snow;
+}
+
+.spec-title {
+    margin: 1.2rem;
+    font-size: 2.5rem;
+}
+
+.dialog-wrapper {
+    margin: 0.8rem;
+    width: 50vw;
+}
+
+.dialog-title {
+    margin: 0.3rem 0;
+    font-size: 1.5rem;
+}
+
+.dialog-content {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.dialog-warn {
+    padding: 1rem;
+    background-color: firebrick;
+    color: white;
+    border: 2px solid black;
+    border-radius: .65rem;
+}
+
+.dialog-greet {
+    padding: 1rem;
+    background-color: forestgreen;
+    color: white;
+    border: 2px solid black;
+    border-radius: .65rem;
+}
+
+.dialog-error {
+    padding: 1rem;
+    background-color: gold;
+    border: 2px solid black;
+    border-radius: .65rem;
+}
+
+.dialog-notice {
+    padding: 1rem;
+    background-color: midnightblue;
+    color: white;
+    border: 2px solid black;
+    border-radius: .65rem;
+}
