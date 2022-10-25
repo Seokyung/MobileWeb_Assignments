@@ -21,9 +21,9 @@ const SecondChild = (props) => {
     return(
         <div className="second">
             <p>자식2 컴포넌트</p>
-            <button className="cnt-button" onClick={onLeftClick}>카운터++</button>
+            <button className="cnt-button" onClick={onLeftClick}>◀︎ 카운터++</button>
             <button className="cnt-button" onClick={props.resetData}>카운터 리셋</button>
-            <button className="cnt-button" onClick={onRightClick}>카운터++</button>
+            <button className="cnt-button" onClick={onRightClick}>카운터++ ►</button>
         </div>
     )
 }
