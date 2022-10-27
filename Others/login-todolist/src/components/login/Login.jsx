@@ -8,7 +8,6 @@ function Login(props) {
     const handleIdChange = (e) => {
         props.setUserId(e.target.value);
     }
-
     const handlePWChange = (e) => {
         setUserPW(e.target.value);
     }
