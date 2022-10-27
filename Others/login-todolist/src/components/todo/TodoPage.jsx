@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Todo.css";
 import InputTodo from "./InputTodo";
 import ListTodo from "./ListTodo";
