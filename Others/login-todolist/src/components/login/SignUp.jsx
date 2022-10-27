@@ -9,12 +9,14 @@ function SignUp(props) {
     return(
         <div id="signup-wrapper">
             <div>
-                ID: <input type="text" /><br/>
-                PW: <input type="password" /><br/>
-                Email: <input type="email" />
-            </div>
-            <div>
-                <button onClick={onSignUpClick}>SignUp!</button>
+                <div>
+                    ID: <input type="text" placeholder="Input ID"/><br/>
+                    PW: <input type="password" placeholder="Input Password"/><br/>
+                    Email: <input type="email" placeholder="Input Email"/>
+                </div>
+                <div>
+                    <button onClick={onSignUpClick}>SignUp!</button>
+                </div>
             </div>
             <div>
                 Are you a memeber?

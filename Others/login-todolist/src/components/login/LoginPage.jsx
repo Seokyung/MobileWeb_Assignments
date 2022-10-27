@@ -8,6 +8,9 @@ function LoginPage() {
     const [isLogin, setIsLogin] = useState(false);
     const [loginFlag, setLoginFlag] = useState(true);
 
+    const [userId, setUserId] = useState("");
+    const [todoList, setTodoList] = useState([]);
+
     const gotoLoginOrSignup = () => {
         setLoginFlag(!loginFlag);
     }
@@ -16,7 +19,7 @@ function LoginPage() {
         <div id="loginpage-wrapper">
             {isLogin ?
                 <>
-                    <TodoPage setIsLogin={setIsLogin}/>
+                    <TodoPage userId={userId} setIsLogin={setIsLogin} todoList={todoList} setTodoList={setTodoList} />
                 </>
                 :
                 <>
@@ -24,7 +27,12 @@ function LoginPage() {
                     <h4>Please login to use our wonderful sevices :D</h4>
                     {loginFlag ?
                         <>
-                            <Login setIsLogin={setIsLogin} gotoLoginOrSignup={gotoLoginOrSignup}/>
+                            <Login
+                                setIsLogin={setIsLogin}
+                                gotoLoginOrSignup={gotoLoginOrSignup}
+                                userId={userId}
+                                setUserId={setUserId}
+                            />
                         </>
                         :
                         <>
