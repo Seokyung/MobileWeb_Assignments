@@ -40,7 +40,7 @@ const addUser = (req, res) => {
 
 app.get("/", mainPage); //REST API 바인딩 - GET (메인페이지)
 app.get("/users", listUsers); //REST API 바인딩 - GET (회원목록)
-app.post("/users", addUser); //REST API 바인딩 - GET (회원가입)
+app.post("/users", addUser); //REST API 바인딩 - POST (회원가입)
 
 //웹서버 가동
 app.listen(65010, () => {
