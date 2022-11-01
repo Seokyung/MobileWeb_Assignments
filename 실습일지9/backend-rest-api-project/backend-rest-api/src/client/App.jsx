@@ -6,6 +6,7 @@ const serverUrl = "http://localhost:65010/users"; //웹서버 접속 주소
 function App() {
     const [userData, setUserData] = useState(null); //서버에서 받아올 사용자 정보(객체배열)를 저장하는 곳
 
+    //회원목록을 서버에서 받아와 userData에 저장하는 함수
     const getUserData = () => {
         fetch(serverUrl) //REST API로 서버로 회원목록을 요청
         .then((res) => res.json()) //회원목록을 json 포맷으로 수신
