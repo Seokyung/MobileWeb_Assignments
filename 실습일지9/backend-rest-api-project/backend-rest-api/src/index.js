@@ -6,5 +6,6 @@ import UserCheck from './client/usercheck';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App/>
+  //<App/>
+  <UserCheck/>
 );
