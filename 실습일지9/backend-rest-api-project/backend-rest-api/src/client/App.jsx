@@ -67,4 +67,4 @@ function App() {
     )
 }
 
-export default App;
+export default App; //App 컴포넌트 내보냄
