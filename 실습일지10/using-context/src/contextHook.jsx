@@ -37,7 +37,7 @@ function Button() {
             backgroundColor: value,
         }}
         >
-            <p>컨텍스트를 가지고 데이터를 전달하는 예</p>
+            <p>컨텍스트를 가지고 데이터를 전달하는 예 (Context API와 useContext() hook 사용)</p>
             <button>확인</button>
         </div>
     )
