@@ -8,6 +8,6 @@ import PageColor from './pageColor';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     //<ContextApp/>
-    <ContextHook/>
-    //<PageColor/>
+    //<ContextHook/>
+    <PageColor/>
 );
