@@ -2,7 +2,7 @@
 import React, {useState, useContext} from "react"; //React, hook 함수들 임포트
 import "./pageColor.css"; //스타일 임포트
 
-const ColorContext = React.createContext(null); //컨텍스트 객체 생성
+const ColorContext = React.createContext(null); //Context API로 컨텍스트 객체 생성
 
 //다크모드를 활성화하는 state변수를 컨텍스트로 제공하는 컴포넌트
 function PageColor() {

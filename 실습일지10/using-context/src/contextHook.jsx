@@ -1,7 +1,7 @@
 //Context API와 useContext() hook을 이용해 전달하는 예제
 import React, {useContext} from "react"; //React, hook 함수 임포트
 
-const ThemeContext = React.createContext("blue"); //컨텍스트 객체 생성
+const ThemeContext = React.createContext("blue"); //Context API로 컨텍스트 객체 생성
 
 function ContextHook() {
     return (

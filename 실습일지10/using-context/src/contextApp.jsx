@@ -1,7 +1,7 @@
 //Context API를 사용해 전달하는 예제
 import React from "react"; //React 임포트
 
-const ThemeContext = React.createContext("blue"); //컨텍스트 객체 생성
+const ThemeContext = React.createContext("blue"); //Context API로 컨텍스트 객체 생성
 
 function ContextApp() {
     return(
