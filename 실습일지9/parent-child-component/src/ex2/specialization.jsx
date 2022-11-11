@@ -16,7 +16,7 @@ function Dialog(props) {
 }
 
 //범용 다이얼로그 컴포넌트를 구체화시켜 만든 경고 다이얼로그 컴포넌트
-function WarnDialog() {
+const WarnDialog = () => {
     return(
         //범용 다이얼로그에 props를 보내 경고 다이얼로그에 맞게 컴포넌트를 구체화함
         <Dialog
