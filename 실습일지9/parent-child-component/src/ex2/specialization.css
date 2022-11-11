@@ -29,6 +29,11 @@
     font-size: 1.1rem; /* 글씨 크기 설정 */
 }
 
+.dialog-button {
+    padding: 0.5rem; /* 안쪽 여백 설정 */
+    font-size: 1rem; /* 글씨 크기 설정 */
+}
+
 .dialog-warn {
     padding: 1rem; /* 안쪽 여백 설정 */
     background-color: firebrick; /* 배경색 설정 */
