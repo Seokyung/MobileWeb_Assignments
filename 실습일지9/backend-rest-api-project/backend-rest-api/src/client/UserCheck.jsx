@@ -50,7 +50,7 @@ function UserCheck() {
         let isUser = false;
 
         //map 함수를 이용해 회원목록 전체에서 사용자가 입력한 정보와 일치하는 회원을 찾음
-        userData.map((user) => {
+        userData.map((user, i) => {
             //정보가 일치하는 회원이 있을경우 콘솔창에 메세지 출력 후 isUser값을 true로 바꿔줌
             if((user.id === id) && (user.passwd === passwd)) {
                 console.log("Found! " + user.id);
@@ -85,7 +85,7 @@ function UserCheck() {
                     <input className="member-input" type="text" name="checkPasswd" placeholder="비밀번호" />
                     <button className="member-btn" type="submit">확인</button>
                 </form>
-                <p style={{color: "red", marginLeft: "0.5rem"}}>{userCheckMsg}</p>{/** 회원 확인여부 메세지 */}
+                {userCheckMsg && <p id="member-check-msg">{userCheckMsg}</p>}{/** 회원 확인여부 메세지 */}
             </div>
             <div>
                 <h2>회원목록</h2>

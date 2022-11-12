@@ -32,3 +32,10 @@
     color: blue; /* 글씨색 설정 */
     font-size: 1.2rem; /* 글씨 크기 설정 */
 }
+
+#member-check-msg {
+    margin-left: 0.5rem;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+}
