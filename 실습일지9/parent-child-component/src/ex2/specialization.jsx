@@ -50,7 +50,7 @@ function ErrorDialog() {
             style="dialog-error"
             title="🚫 오류 발생!"
             content="오류 다이얼로그입니다."
-            btnTxt="오류고치기"
+            btnTxt="오류 고치기"
             onBtnClick={solveError}
         />
     );
