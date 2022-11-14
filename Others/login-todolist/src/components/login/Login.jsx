@@ -1,4 +1,5 @@
 import React, {useState, useRef} from "react";
+import {useNavigate} from "react-router-dom";
 import "./Login.css";
 
 function Login(props) {
@@ -12,9 +13,12 @@ function Login(props) {
         setUserPW(e.target.value);
     }
 
+    const navigate = useNavigate();
+
     const onLoginClick = () => {
         if(props.userId.length > 0 && userPW.length > 0) {
             props.setIsLogin(true);
+            navigate('/todo');
         }
         else {
             alert("Please Input Id and Password!");

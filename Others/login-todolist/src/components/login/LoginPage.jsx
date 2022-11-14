@@ -17,30 +17,30 @@ function LoginPage() {
     
     return(
         <div id="loginpage-wrapper">
-            {isLogin ?
+            <h3>Welcome Stranger!</h3>
+            <h4>Please login to use our wonderful sevices :D</h4>
+            {loginFlag ?
+                <>
+                    <Login
+                        setIsLogin={setIsLogin}
+                        gotoLoginOrSignup={gotoLoginOrSignup}
+                        userId={userId}
+                        setUserId={setUserId}
+                    />
+                </>
+                :
+                <>
+                    <SignUp gotoLoginOrSignup={gotoLoginOrSignup}/>
+                </>
+            }
+            {/* {isLogin ?
                 <>
                     <TodoPage userId={userId} setIsLogin={setIsLogin} todoList={todoList} setTodoList={setTodoList} />
                 </>
                 :
                 <>
-                    <h3>Welcome Stranger!</h3>
-                    <h4>Please login to use our wonderful sevices :D</h4>
-                    {loginFlag ?
-                        <>
-                            <Login
-                                setIsLogin={setIsLogin}
-                                gotoLoginOrSignup={gotoLoginOrSignup}
-                                userId={userId}
-                                setUserId={setUserId}
-                            />
-                        </>
-                        :
-                        <>
-                            <SignUp gotoLoginOrSignup={gotoLoginOrSignup}/>
-                        </>
-                    }
                 </>
-            }
+            } */}
         </div>
     )
 }
