@@ -1,10 +1,13 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import "./Todo.css";
+import { useUserState } from "../user/UserProvider";
 import InputTodo from "./InputTodo";
 import ListTodo from "./ListTodo";
 
 function TodoPage(props) {
+    const [userId, setUserId] = useUserState();
+
     const navigate = useNavigate();
 
     const gobackLogin = () => {
@@ -12,6 +15,7 @@ function TodoPage(props) {
     }
     return(
         <div id="todo-wrapper">
+            <p>Hello, {userId}!</p>
             <p>This is Todo Page.</p>
             <button onClick={() => navigate('/login')}>Goto Login</button>
         </div>

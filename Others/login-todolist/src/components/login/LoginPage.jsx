@@ -8,7 +8,7 @@ function LoginPage() {
     const [isLogin, setIsLogin] = useState(false);
     const [loginFlag, setLoginFlag] = useState(true);
 
-    const [userId, setUserId] = useState("");
+    //const [userId, setUserId] = useState("");
     const [todoList, setTodoList] = useState([]);
 
     const gotoLoginOrSignup = () => {
@@ -24,8 +24,8 @@ function LoginPage() {
                     <Login
                         setIsLogin={setIsLogin}
                         gotoLoginOrSignup={gotoLoginOrSignup}
-                        userId={userId}
-                        setUserId={setUserId}
+                        // userId={userId}
+                        // setUserId={setUserId}
                     />
                 </>
                 :

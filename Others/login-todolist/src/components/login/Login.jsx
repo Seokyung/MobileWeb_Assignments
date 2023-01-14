@@ -1,13 +1,15 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useContext} from "react";
 import {useNavigate} from "react-router-dom";
 import "./Login.css";
+import { useUserState } from "../user/UserProvider";
 
 function Login(props) {
+    const [userId, actions] = useUserState();
     const [userPW, setUserPW] = useState("");
     const idFocus = useRef(null);
 
     const handleIdChange = (e) => {
-        props.setUserId(e.target.value);
+        actions.changeUserId(e.target.value);
     }
     const handlePWChange = (e) => {
         setUserPW(e.target.value);
@@ -16,12 +18,12 @@ function Login(props) {
     const navigate = useNavigate();
 
     const onLoginClick = () => {
-        if(props.userId.length > 0 && userPW.length > 0) {
+        if(userId.length > 0 && userPW.length > 0) {
             props.setIsLogin(true);
             navigate('/todo');
         }
         else {
-            alert("Please Input Id and Password!");
+            alert(`Please Input Id and Password!`);
             idFocus.current.focus();
         }
     }
@@ -30,7 +32,7 @@ function Login(props) {
         <div id="login-wrapper">
             <div>
                 <div>
-                    <input type="text" value={props.userId} ref={idFocus} onChange={handleIdChange} placeholder="Input ID"/><br/>
+                    <input type="text" value={userId} ref={idFocus} onChange={handleIdChange} placeholder="Input ID"/><br/>
                     <input type="password" value={userPW} onChange={handlePWChange} placeholder="Input Password"/>
                 </div>
                 <div>
