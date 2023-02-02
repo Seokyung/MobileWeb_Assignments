@@ -1,7 +1,9 @@
 import React, {useState, useEffect, useRef} from "react";
 import "./Todo.css";
+import { useTodoState } from "../user/TodoProvider";
 
 function InputTodo(props) {
+    const [todoList, setTodoList] = useTodoState();
     const [inputItem, setInputItem] = useState('');
     const todoId = useRef(0);
     const inputFocus = useRef(null);
@@ -15,7 +17,7 @@ function InputTodo(props) {
     }
 
     const addTodo = () => {
-        props.setTodoList((prevItem) => {
+        setTodoList((prevItem) => {
             return[
                 {
                     id: todoId.current,

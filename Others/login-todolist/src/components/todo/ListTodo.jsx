@@ -1,14 +1,20 @@
 import React, {useState} from "react";
 import "./Todo.css";
+import { useTodoState } from "../user/TodoProvider";
 import ItemTodo from "./ItemTodo";
 
 function ListTodo(props) {
+    const [todoList, setTodoList] = useTodoState();
+
     return(
         <div id="list-wrapper">
             <ul>
-                {props.todoList.map((item) => {
+                {todoList.map((item) => {
                     return(
-                        <ItemTodo key={item.id} item={item} todoList={props.todoList} setTodoList={props.setTodoList}/>
+                        <ItemTodo
+                            key={item.id}
+                            item={item}
+                        />
                     )
                 })}
             </ul>

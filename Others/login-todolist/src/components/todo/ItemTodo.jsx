@@ -1,7 +1,9 @@
 import React, {useState, useEffect, useRef} from "react";
 import "./Todo.css";
+import { useTodoState } from "../user/TodoProvider";
 
 function ItemTodo(props) {
+    const [todoList, setTodoList] = useTodoState();
     const [isEdit, setIsEdit] = useState(false);
     const [editItem, setEditItem] = useState(props.item.value);
     const editFocus = useRef(null);
@@ -22,20 +24,20 @@ function ItemTodo(props) {
     }
 
     const updateTodo = (editId) => {
-        const newTodoList = props.todoList.map((item) => (
+        const newTodoList = todoList.map((item) => (
             {
                 id: item.id,
                 value: item.id === editId ? editItem : item.value,
             }
         ));
 
-        props.setTodoList(newTodoList);
+        setTodoList(newTodoList);
         setIsEdit(false);
     }
 
     const deleteTodo = (delId) => {
-        const newTodoList = props.todoList.filter((item) => item.id !== delId);
-        props.setTodoList(newTodoList);
+        const newTodoList = todoList.filter((item) => item.id !== delId);
+        setTodoList(newTodoList);
     }
 
     return(
