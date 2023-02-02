@@ -2,14 +2,10 @@ import React, {useState} from "react";
 import "./Login.css";
 import Login from "./Login";
 import SignUp from "./SignUp";
-import TodoPage from "../todo/TodoPage";
 
 function LoginPage() {
     const [isLogin, setIsLogin] = useState(false);
     const [loginFlag, setLoginFlag] = useState(true);
-
-    //const [userId, setUserId] = useState("");
-    const [todoList, setTodoList] = useState([]);
 
     const gotoLoginOrSignup = () => {
         setLoginFlag(!loginFlag);
@@ -24,8 +20,6 @@ function LoginPage() {
                     <Login
                         setIsLogin={setIsLogin}
                         gotoLoginOrSignup={gotoLoginOrSignup}
-                        // userId={userId}
-                        // setUserId={setUserId}
                     />
                 </>
                 :

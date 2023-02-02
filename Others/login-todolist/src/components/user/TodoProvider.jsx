@@ -5,15 +5,6 @@ export const TodoContext = createContext();
 function TodoProvider({children}) {
     const [todoList, setTodoList] = useState([]);
 
-    // const actions = useMemo(
-    //     () => ({
-    //         changeTodoList(e) {
-    //             setTodoList(e);
-    //         },
-    //     }),
-    //     []
-    // );
-
     const value = useMemo(() => [todoList, setTodoList]);
 
     return (
